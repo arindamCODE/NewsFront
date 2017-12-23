@@ -1,0 +1,27 @@
+<div class="card">
+    <div class="card-header text-center">
+        Signup
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputID1">ID</label>
+                <input #ID type="text" class="form-control" id="exampleInputID1" placeholder="Enter ID">
+
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input #Email type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input #Password type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+
+            </div>
+            <button type="submit" class="btn btn-primary" (click)='saveDetails(ID.value, Email.value, Password.value)'>Submit</button>
+        </form>
+    </div>
+</div>
